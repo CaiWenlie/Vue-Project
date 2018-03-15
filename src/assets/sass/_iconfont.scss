@@ -1,0 +1,46 @@
+.iconfont{
+  font-size: rem(16px);
+  width: 1em;
+  height: 1em;
+  // vertical-align: -0.15em;
+  vertical-align: middle;
+  fill: currentColor;
+	overflow: hidden;
+  position: relative;
+}
+
+.icon-arrow{
+  font-size: px2rem(30px);
+}
+
+.icon-back1,
+.icon-add{
+  font-size: px2rem(44px);
+  top: -1px;
+}
+
+.icon-arrow-xiangxia{
+  font-size: px2rem(26px);
+}
+
+.icon-daohang{
+  top: -1px;
+  font-size: px2rem(30px);
+  margin: 0 px2rem(-4px);
+}
+
+.icon-shezhi{
+  font-size: px2rem(44px);
+  color: white;
+}
+
+.icon-maibo,
+.icon-xieya,
+.icon-tiwen,
+.icon-xietang{
+  font-size: px2rem(80px);
+}
+
+.icon-qingchu1{
+  font-size: px2rem(28px);
+}

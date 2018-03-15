@@ -1,0 +1,189 @@
+
+.container {
+  position: absolute;
+  z-index: $zIndexContent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.bottom-nav {
+    // .view-content{
+    //   &:after{
+    //     content: '';
+    //     display: block;
+    //     padding-bottom: px2rem($bottomNavHeight);
+    //   }
+    // }
+    // bottom: px2rem($bottomNavHeight);
+    .cp-confirm-box {
+      bottom: px2rem(-$bottomNavHeight);
+    }
+    .c-buttons{
+      display: none;
+    }
+  }
+}
+
+// .view-content.bottom-nav{
+//   // &:after{
+//   //   content: '';
+//   //   display: block;
+//   //   padding-bottom: px2rem($bottomNavHeight);
+//   // }
+//   padding-bottom: px2rem($bottomNavHeight);
+// }
+
+.block-nav{
+  height: px2rem($bottomNavHeight);
+}
+
+.view-cover{
+  z-index: $zIndexAllCover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.open{
+    display: block;
+  }
+}
+.view {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // transform: translate3d(0, 0, 0);;
+
+  background: $bgColor;
+
+  &.bottom-nav {
+    padding-bottom: px2rem($bottomNavHeight);
+    .view-fixed-cover{
+      bottom: px2rem(-$bottomNavHeight);
+    }
+  }
+  .view-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex: 1;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(0);
+    z-index: 0;
+
+    &.view-content-bottom {
+      margin-bottom: 3.57143rem;
+    }
+  }
+  // 固定顶部、底部
+  .view-fixed-top,
+  .view-fixed-bottom {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &.header-top{
+      top: px2rem($topHeight);
+    }
+  }
+  .view-fixed-bottom {
+    top: auto;
+    bottom: 0;
+  }
+  //覆盖层，会覆盖住页面
+  .view-fixed-cover {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+
+    &.not-cover-header{
+      top: px2rem($topHeight+$phoneTop+2px);
+    }
+
+    //解决滚动穿透问题
+    .view-scroll-through{
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+
+      &:after{
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 0;
+        left: 0;
+        right: -1px;
+        bottom: 0;
+      }
+    }
+
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.versionNum {
+  background-color: $info;
+  display: inline-block;
+  width: px2rem(140px);
+  height: px2rem(50px);
+  line-height: px2rem(55px);
+  color: #fff;
+  text-align: center;
+  border-radius: px2rem(20px);
+  font-size: px2rem(28px);
+  position: absolute;
+  right: px2rem(100px);
+  top: (px2rem(290px));
+}
+
+#wrapper{
+  -webkit-backface-visibility: hidden;
+}
+
+.bg-white{
+  background: white;
+}
+
+.mark{
+  position: absolute;
+  &.top{
+    top: px2rem(10px);
+  }
+  &.right{
+    right: px2rem(10px);
+  }
+  &.left{
+    left: px2rem(10px);
+  }
+  &.bottom{
+    bottom: px2rem(10px);
+  }
+}
+
+.row-with-gap{
+  padding: 0 px2rem($baseGap);
+}

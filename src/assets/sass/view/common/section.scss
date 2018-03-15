@@ -1,0 +1,27 @@
+.section {
+  background: white;
+  margin-bottom: px2rem(10px);
+
+  > .title {
+    padding: px2rem(30px) px2rem($baseGap);
+    line-height: px2rem(40px);
+    font-size: px2rem(28px);
+    font-weight: bold;
+    color: #000000;
+    @include c-border-b();
+    .fr{
+      font-size: $small;
+      font-weight: normal;
+      color: #9B9B9B;
+    }
+  }
+  > .content {
+    padding: px2rem(30px) px2rem($baseGap);
+  }
+  > .footer{
+    @extend .c-border-t;
+    padding: px2rem(30px) px2rem($baseGap);
+    padding-left: 0;
+    margin-left: px2rem($baseGap);
+  }
+}

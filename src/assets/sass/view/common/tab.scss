@@ -1,0 +1,61 @@
+
+.c-tab{
+  @extend .c-flex-row;
+  // @extend .c-border-b;
+  background: white;
+  position: relative;
+  color: $textColor;
+  flex: none;
+  
+  .item{
+    padding-top: rem(15px);
+    padding-bottom: rem(15px);
+    font-size: $normal;
+    font-weight: bold;
+    line-height: rem(15px);
+    color: $light;
+  }
+  .active{
+    color: $textColor;
+  }
+  .tab-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s;
+    &:after{
+      content: '';
+      display: block;
+      height: 2px;
+      // width: rem(60px);
+      margin: 0 auto;
+      background: $ns-primary;
+    }
+  }
+
+  &.c-tab-ns {
+    margin-left: rem(20px);
+    margin-right: rem(20px);
+  }
+}
+
+
+
+.c-tab2 {
+
+  .item {
+    display: inline-block;
+    font-size: 17px;
+    color: $light;
+    margin-right: rem(15px);
+    width: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: #000;
+    }
+  }
+}

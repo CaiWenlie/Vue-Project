@@ -1,0 +1,39 @@
+
+.form-control{
+  dd{
+    padding: 0;
+    text-align: right;
+  }
+  .form-control-input{
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: right;
+  }
+
+  .control-label{
+    min-width: 4em;
+  }
+}
+
+.button-group{
+  margin-top: px2rem(60px);
+  padding: 0 px2rem($baseGap);
+}
+
+.form-simple{
+  .form-control{
+    .control-label{
+      display: none;
+    }
+    dd{
+      text-align: left;
+      padding-left: 0 !important;
+    }
+    .form-control-input{
+      text-align: left;
+    }
+  }
+}

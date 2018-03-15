@@ -1,0 +1,12 @@
+@charset "UTF-8";
+//px转rem
+// 以750的设计稿为准，750对应的rem是28px;
+@function px2rem($px: 28px) {
+  @return #{$px/$baseSize}rem;
+}
+
+//px转rem
+// 以375的设计稿为准，375对应的rem是14px;
+@function rem($px: 14px) { 
+  @return #{$px/$baseSize*2}rem;
+}

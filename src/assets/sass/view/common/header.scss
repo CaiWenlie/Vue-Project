@@ -1,0 +1,125 @@
+.app .cp-topper {
+  height: px2rem($phoneTop);
+}
+.android {
+  .cp-topper{
+    display: none;
+  }
+
+  .view {
+
+    .view-fixed-top.header-top{
+      top: px2rem($topTitleHeight);
+    }
+
+    .view-fixed-cover.not-cover-header{
+      top: px2rem($topTitleHeight+1px);
+    }
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  // background-color: $white;
+  // color: $textColor;
+  color: black;
+  transition: color .3s;
+
+  .cp-topper{
+    background: white;
+  }
+  .cp-inner {
+    height: px2rem($topTitleHeight);
+    line-height: px2rem($topTitleHeight);
+    position: relative;
+    text-align: center;
+
+    background: white;
+    transition: background .3s;
+
+    .back {
+      position: absolute;
+      left: px2rem($baseGap);
+      top: 0;
+      height: 100%;
+      font-size: px2rem(32px);
+      color: #4A4A4A;
+      // &:before {
+      //   content: '';
+      //   display: inline-block;
+      //   border-left: px2rem(5px) solid $white;
+      //   border-bottom: px2rem(5px) solid $white;
+      //   width: px2rem(20px);
+      //   height: px2rem(20px);
+      //   transform: rotate(45deg);
+      // }
+    }
+    .right {
+      position: absolute;
+      right: px2rem($baseGap);
+      top: 0;
+      height: 100%;
+      font-size: px2rem(30px);
+      color: #4A4A4A;
+      border: none;
+      background: none;
+      .iconfont {
+        color: #88889C;
+      }
+    }
+    .cancel {
+      position: absolute;
+      left: px2rem(21px);
+      top: 0;
+      height: 100%;
+      font-size: px2rem(32px);
+      padding: 0 px2rem(14px);
+    }
+    .sure {
+      position: absolute;
+      right: px2rem(21px);
+      top: 0;
+      height: 100%;
+      font-size: px2rem(32px);
+      padding: 0 px2rem(14px);
+    }
+    h1 {
+      display: inline-block;
+      font-weight: 500;
+      font-size: px2rem(34px);
+      height: 100%;
+      line-height: px2rem($topTitleHeight);
+      font-weight: bold;
+    }
+
+    .c-icon-search-white{
+      position: absolute;
+      right: px2rem(90px);
+      top: px2rem( ($topTitleHeight - 60px) / 2 );
+    }
+    .c-icon-plus, .c-icon-dotdd{
+      position: absolute;
+      right: px2rem(20px);
+      top: px2rem( ($topTitleHeight - 60px) / 2 );
+    }
+  }
+
+  &.transparent {
+    background: none;
+    border: none;
+    height: 0;
+    color: white;
+    .iconfont{
+      color: white;
+    }
+    .cp-topper{
+      background: none;
+    }
+    .cp-inner{
+      background: none;
+      border: none;
+    }
+  }
+}

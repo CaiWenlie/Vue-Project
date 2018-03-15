@@ -1,0 +1,52 @@
+
+.cp-bottom-nav {
+  position: absolute;
+  z-index: $zIndexBottom;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: px2rem($bottomNavHeight);
+  align-items: center;
+  background: #fcfcfc;
+  @extend .c-border-t;
+  font-size: rem(10px);
+  color: $light;
+  // box-shadow: $shadow;
+  > li {
+    padding: px2rem(9px) 0 0;
+    &.cur {
+      color: $primary;
+    }
+
+    >.icon {
+      margin-bottom: rem(2px);
+      font-size: rem(17px);
+    }
+  }
+
+  &.cp-bottom-add {
+    background: $primary;
+    color: #fff;
+    text-align: center;
+    line-height: px2rem($bottomNavHeight);
+    font-size: rem(16px);
+  }
+
+  &.cp-bottom-nav-ns {
+    // background-color: rgba(255,255,255,.8);
+    // box-shadow: 0 2px 12px 0 rgba(108, 108, 108, 0.1);
+    box-shadow: none;
+    z-index: 1000000;
+    @extend .c-border-t;
+    >li {
+      padding: {
+        top: 0px;
+        bottom: 0;
+      }
+
+      .icon {
+        font-size: 22px;
+      }
+    }
+  }
+}

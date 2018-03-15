@@ -1,0 +1,111 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// setting scss
+//-----------------------------------------------------
+// font相关
+//-----------------------------------------------------
+$baseSize: 28px !default;
+$baseLineHeight: 1.4 !default;
+$baseFont: "Helvetica Neue",
+Helvetica,
+STHeiTi,
+Arial,
+sans-serif !default;
+// 元素上下间距
+//-----------------------------------------------------
+$baseGap: 40px;
+
+// header,footer等的高度
+//-----------------------------------------------------
+$phoneTop: 40px;
+$topTitleHeight: 100px;
+$topHeight: $topTitleHeight;
+$bottomNavHeight: 100px;
+$lineHeight: 100px;
+//----------------------color------------------------
+// 灰色调
+$black: black !default;
+$grayDark: #363e47 !default;
+$gray: #5c5c5c !default;
+$gray2: #7e7e7e !default;
+$grayLight: #c7c7cc !default;
+$white: white !default;
+$dark: #262626 !default;
+$light: #9B9B9B !default;
+$lighter: #c2c2c2 !default;
+// 主色调-绿色
+$primaryDark: #12af6f !default;
+$primary: #EE884C !default;
+$primaryLight: #0cc97c !default;
+
+$primaryBtn: #EE884C;
+$primaryBtnActive: darken($primaryBtn, 5%);
+
+//辅色调-蓝色
+$info: #02b0f0 !default;
+//反色调-红色
+$warn: #f27474 !default;
+// link
+$linkColor: #57a5f2 !default;
+$activeBg: #dddede !default;
+// scaffolding
+//-----------------------------------------------------
+$bodyBg: white !default;
+$bgColor: #f7f8fa !default;
+$bgColor2: #ffffff !default;
+$textColor: #4a4a4a !default;
+$borderColor: #eeeeee !default;
+$border: 1px solid $borderColor;
+
+$shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+
+// placeholder
+//-----------------------------------------------------
+// 变量分别为：是否输出表单的占位符placeholder样式，文本色
+$placeholder: true $grayLight !default;
+// radius
+//-----------------------------------------------------
+$radiusBase: 10px !default;
+// z-index
+//-----------------------------------------------------
+$zIndexAllCover: 10000 !default;
+$zIndexShortcut: 600 !default;
+$zIndexShortcutBtn: 599 !default;
+//$zIndexHeader: 400 !default;
+$zIndexContent: 700 !default;
+$zIndexBottom: 800 !default;
+$zIndexOverlay: 980 !default; // 默认高于header和footer部分
+$zIndexSure: 980 !default;
+$zIndexConfirm: 1000 !default; //弹出框
+$zIndexToast: 1000 !default; //提示消息
+$zIndexLoading: 1100 !default; //loading
+//-----------------------------------------------------
+$fontX: 24px !default;
+$fontS: 26px !default;
+$fontM: 30px !default;
+$fontML: 32px !default;
+$fontL: 34px !default;
+
+
+$one-line-v: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjI5N0M1NzlENjFGMTFFNkI2M0I5RkMzMzZCODU0RjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjI5N0M1N0FENjFGMTFFNkI2M0I5RkMzMzZCODU0RjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMjk3QzU3N0Q2MUYxMUU2QjYzQjlGQzMzNkI4NTRGMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMjk3QzU3OEQ2MUYxMUU2QjYzQjlGQzMzNkI4NTRGMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqOiZRsAAAAaSURBVHjaYnj37t1/JgYGBkYQwQAi/gMEGABDfgTQC7RzeAAAAABJRU5ErkJggg==) 2 0 stretch;
+$one-line-h: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjI5N0M1N0RENjFGMTFFNkI2M0I5RkMzMzZCODU0RjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjI5N0M1N0VENjFGMTFFNkI2M0I5RkMzMzZCODU0RjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMjk3QzU3QkQ2MUYxMUU2QjYzQjlGQzMzNkI4NTRGMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCMjk3QzU3Q0Q2MUYxMUU2QjYzQjlGQzMzNkI4NTRGMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlchdyMAAAAXSURBVHjaYnz37t1/BgYGRgYI+A8QYAA38wTLzpCoMAAAAABJRU5ErkJggg==) 0 2 stretch;
+
+// 园区类型颜色
+$type1Color: #2CB4E7;
+$type2Color: #48C86B;
+$type3Color: #F05034;
+$typeDefaultColor: #909090;
+
+//智慧社区 --- 颜色
+$heizi: #4F4F6F;  //黑紫：看上去是黑色其实是紫色，经常用于白底反衬
+$huiborder: #e4e4e4;  //灰色边框
+$textColorHui: #bdc1c9;  //用于与textColor强弱对比灰色字体
+
+
+// nursing
+$ns-primary: #EE884C;
+$bg-primary-dark: #D4823C;
+
+$inform-width: 20px;
+$inform-bg: #EE884C;
+$inform-width-lg: 25px;

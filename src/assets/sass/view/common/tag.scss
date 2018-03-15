@@ -1,0 +1,29 @@
+.tag{
+  color: white;
+  background: $primary;
+  border-radius: rem(2px);
+  padding: rem(3px) rem(4px);
+  font-size: rem(11px);
+  text-align: center;
+  line-height: 1em;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tag-circle{
+  min-width: rem(18px);
+  border-radius: rem(18px);
+}
+
+.tag-info{
+  @extend .btn, .btn-sm, .btn-primary, .btn-reverse;
+  font-size: px2rem(22px);
+  line-height: px2rem(30px);
+  padding: px2rem(2px) px2rem(8px);
+  height: auto;
+  border-radius: px2rem(10px);
+  + .tag-info{
+    margin-left: px2rem(10px);
+  }
+}

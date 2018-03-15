@@ -1,0 +1,62 @@
+
+
+.btn{
+  display: inline-block;
+  font-size: $small;
+  line-height: rem(14px);
+  padding: rem(6px) rem(14px);
+  border-radius: rem(4px);
+  white-space: nowrap;
+  text-align: center;
+
+  border: $border;
+  -webkit-appearance: none;
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+  height: px2rem(100px);
+  border-radius: px2rem(10px);
+  font-size: px2rem(34px);
+}
+.btn-lg{
+  width: px2rem(280px);
+  height: px2rem(80px);
+  font-size: $normal;
+  border-radius: px2rem(8px);
+}
+.btn-md{
+  height: px2rem(56px);
+  line-height: px2rem(32px);
+  padding: px2rem(10px) px2rem(30px);
+  font-size: $small;
+}
+.btn-sm{
+  height: px2rem(48px);
+  font-size: $small;
+  padding: px2rem(10px) px2rem(20px);
+  border-radius: px2rem(4px);
+  line-height: 1em;
+}
+
+@mixin button($color) {
+  border-color: $color;
+  background: $color;
+  color: white;
+  &.btn-reverse{
+    background: none;
+    color: $color;
+  }
+}
+
+.btn-default{
+  @include button($light);
+  &.btn-reverse{
+    border: 1px solid #F0F0F0;
+    color: $light;
+  }
+}
+.btn-primary {
+  @include button($primary);
+}

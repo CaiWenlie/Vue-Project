@@ -1,0 +1,259 @@
+
+.list-line{
+  li > dl{
+    @extend .c-border-b;
+  }
+  li:last-child,
+  li:last-child > dl{
+    border: none;
+  }
+}
+
+.no-line{
+  border: none;
+}
+
+.c-list{
+  margin: 0;
+  background: white;
+  @extend .list-line;
+  li > dl{
+    @extend .c-table-row;
+    padding: rem(10px) rem(15px);
+  }
+  dl.c-flex-row{
+    align-items: flex-start;
+  }
+  dd{
+    text-align: left;
+    p{
+      @extend .text-overflow;
+      &.multi-line{
+        white-space: normal;
+      }
+    }
+  }
+  dt + dd, dd + dt{
+    padding-left: rem(10px);
+  }
+
+  .title{
+    font-size: px2rem(30px);
+    color: black;
+    line-height: px2rem(42px);
+    margin-bottom: px2rem(20px);
+  }
+  .text{
+    font-size: px2rem(26px);
+    line-height: px2rem(36px);
+    max-height: px2rem(72px);
+  }
+  .desc{
+    line-height: px2rem(28px);
+    margin-top: px2rem(10px);
+    .btn{
+      font-size: px2rem(24px);
+    }
+  }
+
+  &.half-line{
+    li{
+      padding-left: rem(15px);
+    }
+    dl{
+      padding-left: 0;
+    }
+  }
+
+}
+
+.gap-title{
+  font-size: px2rem(24px);
+  color: #9B9B9B;
+  padding: px2rem(26px) px2rem($baseGap);
+  line-height: px2rem(32px);
+  background: $bgColor;
+}
+
+
+// 单行列表
+.c-grid{
+  background: white;
+  @extend .list-line;
+
+  > li {
+    position: relative;
+
+    &.disabled{
+      dt{
+        color: #9B9B9B;
+      }
+    }
+  }
+  dl{
+    @extend .c-table-row;
+    padding: 0;
+    margin-left: px2rem($baseGap);
+    padding-right: px2rem($baseGap);
+    height: px2rem($lineHeight);
+  }
+  dt{
+    color: $textColor;
+    padding: 1px 0;
+    text-align: left;
+
+    >.iconfont {
+      color: #BDC1C9;
+    }
+  }
+  dd{
+    text-align: left;
+    font-size: $normal;
+    color: black;
+
+    .portrait {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  dt + dd, dd + dt{
+    padding-left: px2rem(20px);
+  }
+  .control-label{
+    min-width: 4em;
+    + dd{
+      padding-left: px2rem(60px);
+    }
+  }
+  .arrow{
+    @extend .c-icon;
+    @extend .c-icon-list-arrow;
+    position: relative;
+    top: -2px;
+  }
+  textarea{
+    border: none;
+    width: 100%;
+    height: rem(150px);
+    resize: none;
+    padding: px2rem(30px) px2rem($baseGap);
+    display: block;
+    background: none;
+    color: black;
+  }
+}
+
+.c-select{
+  .view-fixed-bottom{
+    background: $bgColor;
+  }
+  .cp-dropdown{
+    @extend .list-line;
+    padding: 0;
+    font-size: rem(15px);
+    line-height: rem(50px);
+    &.cancel{
+      padding-top: rem(5px);
+      background: #f7f8fa;
+      li{
+        background: white;
+      }
+    }
+  }
+}
+
+.c-collapse-list{
+  @extend .list-line;
+  background: white;
+  dl{
+    height: rem(50px);
+    text-align: left;
+    font-size: $medium;
+    padding: rem(15px);
+  }
+  .checkbox{
+    margin-right: rem(15px);
+  }
+  li:last-child.open > dl{
+    @extend .c-border-b;
+  }
+}
+
+.pic-text-list{
+  @extend .c-list;
+
+  li > dl{
+    padding: px2rem($baseGap);
+    color: #9B9B9B;
+    font-size: px2rem(24px);
+  }
+  dd{
+    padding: 0 px2rem(20px);
+
+  }
+  dd,dt{
+    position: relative;
+    min-height: px2rem(150px);
+  }
+  .img-wrap{
+    width: px2rem(200px);
+    height: px2rem(150px);
+  }
+
+}
+
+.touch-list .touch,
+.touch-item.touch{
+  background: #ECECEC;
+}
+
+.slide-list{
+  &.touch-list .touch dl {
+    background: #ECECEC;
+  }
+  li{
+    position: relative;
+    padding: 0;
+  }
+  dl{
+    position: relative;
+    z-index: 1;
+    background: white;
+    margin: 0;
+    padding: 0 px2rem($baseGap);
+
+    &.animation{
+      transition: all 0.3s;
+    }
+  }
+  .slide-btn-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    @extend .c-flex-row;
+
+    .slide-btn{
+      background: #F75E41;
+      color: white;
+      width: px2rem(120px);
+      line-height: px2rem(100px);
+    }
+  }
+}
+
+.detail-list{
+  dl{
+    @extend .c-table-row;
+    color: $light;
+    + dl{
+     margin-top: px2rem(20px);
+   }
+  }
+  dd{
+    text-align: right;
+  }
+
+}

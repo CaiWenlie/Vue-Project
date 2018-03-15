@@ -1,0 +1,40 @@
+
+//---列表的的加载状态----
+.c-list-state {
+  text-align: center;
+  .c-list-state-text{
+    padding: rem(14px) 0;
+  }
+  &.no-list {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.no-data{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: px2rem(200px) 0;
+  @extend .c-flex-center;
+  flex-direction: column;
+
+  background: white;
+  color: $light;
+  text-align: center;
+
+  p{
+    margin-top: px2rem(42px);
+    font-size: $normal;
+  }
+  .link{
+    color: $primary;
+    margin: rem(5px);
+  }
+  img{
+    width: px2rem(160px);
+  }
+  .btn{
+    margin-top: px2rem(60px);
+  }
+}

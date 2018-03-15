@@ -1,0 +1,154 @@
+
+.c-icon-backlog {
+	width: px2rem(104px);
+	height: px2rem(104px);
+	float: left;
+	margin-right: 1rem;
+}
+
+.c-icon-backlog2 {
+	width: px2rem(104px);
+	height: px2rem(104px);
+	float: left;
+	margin-right: 1rem;
+}
+
+.c-icon-zulv, .c-icon-business {
+	width: px2rem(44px);
+	height: px2rem(44px);
+}
+
+.c-icon-select-up, .c-icon-select-down {
+	width: px2rem(20px);
+	height: px2rem(20px);
+	vertical-align: baseline;
+	margin: {
+		left: 3px;
+	}
+}
+
+.c-icon-search-icon {
+	width: px2rem(44px);
+	height: px2rem(44px);
+}
+
+.c-icon-searchbox-search {
+	width: px2rem(26px);
+	height: px2rem(26px);
+}
+
+.c-icon-searchbox-close {
+	width: px2rem(30px);
+	height: px2rem(30px);
+}
+
+.c-icon-client-list {
+	width: px2rem(44px);
+	height: px2rem(44px);
+}
+
+.c-icon-sta-blank {
+	width: px2rem(240px);
+	height: px2rem(240px);
+}
+
+.c-icon-logo-us {
+	width: px2rem(202px);
+	height: px2rem(200px);
+}
+.c-icon-winwin-us {
+	width: px2rem(240px);
+	height: px2rem(102px);
+}
+.c-icon-write {
+	width: px2rem(44px);
+	height: px2rem(44px);
+}
+.c-icon-list-arrow {
+	width: px2rem(20px);
+	height: px2rem(32px);
+}
+.c-icon-tips {
+	width: px2rem(30px);
+	height: px2rem(12px);
+}
+.c-icon-select-icon-default, .c-icon-select-icon-up, .c-icon-select-icon-down {
+	width: px2rem(40px);
+	height: px2rem(40px);
+}
+
+.c-icon-agent-collect,
+.c-icon-agent-integral,
+.c-icon-agent-order,
+.c-icon-agent-park,
+.c-icon-agent-wallet,
+.c-icon-agent-user {
+	width: px2rem(64px);
+	height: px2rem(64px);
+}
+
+
+// 工作台图标
+.c-icon-w-house,
+.c-icon-w-bill,
+.c-icon-w-charge,
+.c-icon-w-client,
+.c-icon-w-contract,
+.c-icon-w-interview,
+.c-icon-w-order,
+.c-icon-w-water,
+{
+	width: px2rem(64px);
+	height: px2rem(64px);
+}
+.c-icon-add-img {
+	width: px2rem(60px);
+	height: px2rem(60px);
+}
+
+// nav图标
+.c-icon-n-home,
+.c-icon-n-message,
+.c-icon-n-workbench,
+.c-icon-n-contacts,
+.c-icon-n-user,
+.c-icon-n-home-active,
+.c-icon-n-message-active,
+.c-icon-n-workbench-active,
+.c-icon-n-contacts-active,
+.c-icon-n-user-active{
+	width: px2rem(48px);
+	height: px2rem(48px);
+}
+
+// header back icon
+.c-icon-nav-back,
+.c-icon-nav-map,
+.c-icon-nav-list,
+.c-icon-map,
+.c-icon-change-black,
+.c-icon-locating,
+.c-icon-zoomin,
+.c-icon-zoomout,
+.c-icon-contacts-phone,
+.c-icon-district,
+.c-icon-selected,
+.c-icon-unselected,
+.c-icon-checked,
+.c-icon-unchecked {
+	width: px2rem(44px);
+	height: px2rem(44px);
+}
+
+.c-icon-no-data,
+.c-icon-no-data-contacts,
+.c-icon-no-data-message,
+.c-icon-no-data-bill,
+.c-icon-no-data-rental,
+.c-icon-no-data-bad-network,
+.c-icon-no-data-customer,
+.c-icon-no-data-customer-search-default,
+.c-icon-no-data-customer-search {
+	@include size(120px);
+}
+ 
